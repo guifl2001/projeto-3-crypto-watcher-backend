@@ -23,7 +23,7 @@ user3.save!
 User.all.each do |user|
   c = Crypto.new
   c.user = user
-  c.crypto = 'Bitcoin'
+  c.crypto = 'bitcoin'
   c.buying_price = '30000'
   c.quantity = '1'
   c.notes = 'Teste'
@@ -31,7 +31,7 @@ User.all.each do |user|
 
   d = Crypto.new
   d.user = user
-  d.crypto = 'Ethereum'
+  d.crypto = 'ethereum'
   d.buying_price = '30000'
   d.quantity = '1'
   d.notes = 'Teste'
@@ -39,7 +39,7 @@ User.all.each do |user|
 
   e = Crypto.new
   e.user = user
-  e.crypto = 'Litecoin'
+  e.crypto = 'litecoin'
   e.buying_price = '20000'
   e.quantity = '10'
   e.notes = 'Teste'
