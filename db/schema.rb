@@ -12,11 +12,14 @@
 
 ActiveRecord::Schema.define(version: 2022_06_06_235242) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "cryptos", force: :cascade do |t|
-    t.integer "user_id", null: false
+    t.bigint "user_id", null: false
     t.string "crypto"
     t.float "buying_price"
-    t.integer "quantity"
+    t.float "quantity"
     t.text "notes"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

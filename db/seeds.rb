@@ -25,7 +25,7 @@ User.all.each do |user|
   c.user = user
   c.crypto = 'bitcoin'
   c.buying_price = '30000'
-  c.quantity = '1'
+  c.quantity = 0.1
   c.notes = 'Teste'
   c.save
 
@@ -33,7 +33,7 @@ User.all.each do |user|
   d.user = user
   d.crypto = 'ethereum'
   d.buying_price = '30000'
-  d.quantity = '1'
+  d.quantity = 0.3
   d.notes = 'Teste'
   d.save
 

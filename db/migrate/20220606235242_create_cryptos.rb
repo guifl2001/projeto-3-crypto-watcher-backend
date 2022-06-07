@@ -4,7 +4,7 @@ class CreateCryptos < ActiveRecord::Migration[6.1]
       t.references :user, null: false, foreign_key: true
       t.string :crypto
       t.float :buying_price
-      t.integer :quantity
+      t.float :quantity
       t.text :notes
 
       t.timestamps
