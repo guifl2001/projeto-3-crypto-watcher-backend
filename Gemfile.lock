@@ -189,7 +189,7 @@ DEPENDENCIES
   devise-jwt
   dotenv-rails
   listen (~> 3.3)
-  pg (~> 0.18)
+  pg
   puma (~> 5.0)
   rack-cors
   rails (~> 6.1.6)
